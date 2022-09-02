@@ -3,66 +3,59 @@
     --primary: #ff2d20;
     --darkred: #aa2d20;
     --gray: #efefef;
-    --darkgray: #cdcdcd;
+    --darkgray: #cdcdcd
 }
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 *,
 ::before ::after {
-    box-sizing: inherit;
+    box-sizing: inherit
 }
 
 body {
     font-size: 1.2rem;
     font-family: krub, sans-serif;
-    background-image: linear-gradient(to top, var(--darkgray) 0%, var(--white) 100%);
+    background-image: linear-gradient(to top, var(--darkgray) 0, var(--white) 100%)
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: 3.8rem
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 2.8rem
 }
 
-h3{
-    font-size: 1.8rem;
+h3 {
+    font-size: 1.8rem
 }
 
-h1, h2, h3 {
-    text-align: center;
+h1,
+h2,
+h3 {
+    text-align: center
 }
 
 header h1 {
-    text-align: center;
+    text-align: center
 }
 
 header h1 span.dev {
-    font-size: 2rem;
+    font-size: 2rem
 }
 
 header h1 span.lang_php {
     font-size: 2rem;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 nav.principal_navigation {
     display: flex;
-    flex-direction: column;
-}
-
-.container {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-.nav_bg {
-    background-color: var(--primary);
+    flex-direction: column
 }
 
 nav.principal_navigation a {
@@ -72,12 +65,12 @@ nav.principal_navigation a {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: 1rem
 }
 
 nav.principal_navigation a:hover {
     background-color: var(--gray);
-    color: var(--primary);
+    color: var(--primary)
 }
 
 #hero {
@@ -86,7 +79,7 @@ nav.principal_navigation a:hover {
     background-size: auto;
     height: 30rem;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem
 }
 
 #hero .hero__container {
@@ -98,141 +91,346 @@ nav.principal_navigation a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
-#hero .hero__container h2{
-    font-size: 2.4rem;
+#hero .hero__container h2 {
+    font-size: 2.4rem
 }
 
 #hero .hero__container h2,
 #hero .hero__container p {
-    color: var(--white);
+    color: var(--white)
 }
 
-#hero .hero__container .hero__image img{
-    width: 9rem;
+#hero .hero__container .hero__image img {
+    width: 9rem
 }
 
-#hero .hero__container .hero__text{
+#hero .hero__container .hero__text {
     width: 25rem;
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: justify;
+    text-align: justify
 }
 
-main.container{
-    text-align: center;
+main.container {
+    text-align: center
 }
 
-main.container.shadow{
-    -webkit-box-shadow: 0px 5px 15px 0 rgba(112, 112, 112, 0.54);
-    -moz-box-shadow: 0px 5px 15px 0 rgba(112, 112, 112, 0.54);
-    box-shadow: 0px 5px 15px 0 rgba(112, 112, 112, 0.54);
+main.container.shadow {
+    -webkit-box-shadow: 0 5px 15px 0 rgba(112, 112, 112, .54);
+    -moz-box-shadow: 0 5px 15px 0 rgba(112, 112, 112, .54);
+    box-shadow: 0 5px 15px 0 rgba(112, 112, 112, .54);
     background-color: var(--white);
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem
 }
 
-main.container .description__framework{
+main.container .description__framework {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
-main.container .description__framework p{
-    line-height: 2;
+main.container .description__framework p {
+    line-height: 2
 }
 
-main.container .description__framework .icons{
+main.container .description__framework .icons {
     height: 10rem;
     width: 10rem;
     background-color: var(--darkred);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
-footer{
-    text-align: center;
-    padding: 2rem;
+a.button{
+    display: none;
 }
+
+a.sm.button{
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem
+}
+
+/* ! Responsive */
 
 @media (min-width:768px) {
-    body{
-    font-size: 1.6rem;
+    body {
+        font-size: 1.6rem
     }
 
     nav.principal_navigation {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 2rem;
+        padding: 0 2rem
     }
 
-    #hero{
-        height: 50rem;
+    #hero {
+        height: 50rem
     }
 
-    #hero .hero__container .hero__image img{
-        width: 10rem;
+    #hero .hero__container .hero__image img {
+        width: 10rem
     }
 
-    #hero .hero__container .hero__text{
+    #hero .hero__container .hero__text {
         width: 50rem;
-        font-size: 2rem;
+        font-size: 2rem
     }
 
-    main.container .descriptions .description__framework h3{
-        font-size: 2rem;
+    main.container .descriptions .description__framework h3 {
+        font-size: 2rem
     }
 
-    main.container .description__framework p{
-        text-align: justify;
+    main.container .description__framework p {
+        text-align: justify
     }
 
-    main.container .descriptions{
+    main.container .descriptions {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 3rem;
+        column-gap: 3rem
     }
 
-    main.container .description__framework .icons{
+    main.container .description__framework .icons {
         height: 15rem;
-        width: 15rem;
+        width: 15rem
+    }
+
+    a.button{
+        display: block;
+    }
+
+    a.button.sm{
+        display: none;
     }
 }
 
-@media (min-width: 1280px) {
-    body{
-    font-size: 2rem;
+@media (min-width:1280px) {
+    body {
+        font-size: 2rem
     }
 
     nav.principal_navigation {
-        padding: 0;
+        padding: 0
     }
 
-    #hero{
-        height: 60rem;
+    #hero {
+        height: 60rem
     }
 
-    #hero .hero__container h2{
-        font-size: 3.8rem;
+    #hero .hero__container h2 {
+        font-size: 3.8rem
     }
 
-    #hero .hero__container .hero__text{
-        font-size: 2.8rem;
+    #hero .hero__container .hero__text {
+        font-size: 2.8rem
     }
 
-    main.container.shadow{
-        max-width: 100rem;
+    main.container.shadow {
+        max-width: 100rem
     }
 
-    main.container .descriptions .description__framework h3{
-        font-size: 2.2rem;
+    main.container .descriptions .description__framework h3 {
+        font-size: 2.2rem
     }
 
-    main.container .description__framework p{
-        text-align: justify;
+    main.container .description__framework p {
+        text-align: justify
     }
+}
+
+/* ! Utility */
+.button{
+    border-radius: 2rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bg-primary{
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.button.bg-primary:hover{
+    background-color: var(--darkgray);
+    color: #ff2d20;
+}
+
+.p-1{
+    padding: 0.5rem;
+}
+
+.p-2{
+    padding: 1rem;
+}
+
+.p-3{
+    padding: 1.5rem;
+}
+
+.p-4{
+    padding: 1.75rem;
+}
+
+.p-5{
+    padding: 2rem;
+}
+
+.px-1{
+    padding: 0 0.5rem;
+}
+
+.px-2{
+    padding: 0 1rem;
+}
+
+.px-3{
+    padding: 0 1.5rem;
+}
+
+.px-4{
+    padding: 0 1.75rem;
+}
+
+.py-5{
+    padding: 0 2rem;
+}
+
+.py-1{
+    padding: 0.5rem 0;
+}
+
+.py-2{
+    padding: 1rem 0;
+}
+
+.py-3{
+    padding: 1.5rem 0;
+}
+
+.py-4{
+    padding: 1.75rem 0;
+}
+
+.py-5{
+    padding: 2rem 0;
+}
+
+.pl-1{
+    padding-left: 0.5rem;
+}
+
+.pl-2{
+    padding-left: 1rem;
+}
+
+.pl-3{
+    padding-left: 1.5rem;
+}
+
+.pl-4{
+    padding-left: 1.75rem;
+}
+
+.pl-5{
+    padding-left: 2rem;
+}
+
+.pr-1{
+    padding-right: 0.5rem;
+}
+
+.pr-2{
+    padding-right: 1rem;
+}
+
+.pr-3{
+    padding-right: 1.5rem;
+}
+
+.pr-4{
+    padding-right: 1.75rem;
+}
+
+.pr-5{
+    padding-right: 2rem;
+}
+
+.pt-1{
+    padding-top: 0.5rem;
+}
+
+.pt-2{
+    padding-top: 1rem;
+}
+
+.pt-3{
+    padding-top: 1.5rem;
+}
+
+.pt-4{
+    padding-top: 1.75rem;
+}
+
+.pt-5{
+    padding-top: 2rem;
+}
+
+.pb-1{
+    padding-bottom: 0.5rem;
+}
+
+.pb-2{
+    padding-bottom: 1rem;
+}
+
+.pb-3{
+    padding-bottom: 1.5rem;
+}
+
+.pb-4{
+    padding-bottom: 1.75rem;
+}
+
+.pb-5{
+    padding-bottom: 2rem;
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+.lowercase {
+    text-transform: lowercase
+}
+
+.capitalize {
+    text-transform: capitalize
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto
+}
+
+.nav_bg {
+    background-color: var(--primary)
+}
+
+p.regular_weight{
+    font-weight: 400;
 }

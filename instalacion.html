@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Laravel</title>
 </head>
+
 <body>
     <header>
-        <h1>Dev. Fernan Pérez</h1>
+        <h1>Dev. Fernan Pérez <span class="dev">Desarrollador backend <span class="lang_php">php</span></span></h1>
     </header>
     <div class="nav_bg">
         <nav class="principal_navigation container">
@@ -25,8 +27,94 @@
             <a href="#">Contacto</a>
         </nav>
     </div>
+    <section id="hero">
+        <div class="hero__container">
+            <h2 class="uppercase">Proceso de instalación</h2>
+            <div class="hero__image">
+                <img src="img/logomark.min.svg" alt="logomark.svg">
+            </div>
+            <div class="hero__text">
+                <p class="regular_weight">Para iniciar en <strong><em>laravel</em></strong> es necesario contar con
+                    conocimientos de <strong><em>php</em></strong> y de <strong><em>sql</em></strong>, también es
+                    necesario tener conocimiento de <strong><em>MVC</em></strong></p>
+            </div>
+        </div>
+    </section>
+    <main class="container shadow">
+        <h2>Elementos necesarios</h2>
+        <div class="descriptions">
+            <section class="description__framework">
+                <h3 class="capitalize">composer</h3>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-php" width="64"
+                        height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <ellipse cx="12" cy="12" rx="10" ry="9" />
+                        <path
+                            d="M5.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" />
+                        <path
+                            d="M15.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" />
+                        <path d="M12 7.5l-1 5.5" />
+                        <path d="M11.6 10h2.4l-.5 3" />
+                    </svg>
+                </div>
+                <p>Composer es una herramienta para la gestión de dependencias en PHP. Le permite declarar las
+                    bibliotecas de las que depende su proyecto y las administrará (instalará / actualizará) por
+                    usted.<br>
+                    Composer puede utilizarse de manera local, así, como de manera global.
+                </p>
+                <a href="https://getcomposer.org/" target="_blank" referrerpolicy="no-referrer" class="uppercase decoration-none button sm bg-primary py-3">Composer</a>
+            </section>
+            <section class="description__framework">
+                <h3 class="capitalize">git</h3>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-git" width="64"
+                        height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="16" cy="12" r="1" />
+                        <circle cx="12" cy="8" r="1" />
+                        <circle cx="12" cy="16" r="1" />
+                        <path d="M12 15v-6" />
+                        <path d="M15 11l-2 -2" />
+                        <path d="M11 7l-1.9 -1.9" />
+                        <path
+                            d="M10.5 20.4l-6.9 -6.9c-.781 -.781 -.781 -2.219 0 -3l6.9 -6.9c.781 -.781 2.219 -.781 3 0l6.9 6.9c.781 .781 .781 2.219 0 3l-6.9 6.9c-.781 .781 -2.219 .781 -3 0z" />
+                    </svg>
+                </div>
+                <p>Git es un sistema de control de versiones distribuido gratuito y de código abierto diseñado para
+                    manejar todo, desde proyectos pequeños hasta proyectos muy grandes con velocidad y eficiencia.<br>
+                    Facíl de aprender y un rendimiento acelerado.
+                </p>
+                <a href="https://git-scm.com/" target="_blank" referrerpolicy="no-referrer" class="uppercase decoration-none button sm bg-primary py-3">git</a>
+            </section>
+            <section class="description__framework">
+                <h3 class="capitalize">tailwindcss</h3>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind"
+                        width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+                    </svg>
+                </div>
+                <p>Tailwind CSS funciona escaneando todos sus archivos HTML, componentes JavaScript y cualquier otra
+                    plantilla en busca de nombres de clase, generando los estilos correspondientes y luego
+                    escribiéndolos en un archivo CSS estático.
+                    Es rápido, flexible y confiable, con tiempo de ejecución cero.</p>
+
+                <a href="https://tailwindcss.com/" target="_blank" referrerpolicy="no-referrer" class="uppercase decoration-none button sm bg-primary py-3">npm</a>
+            </section>
+                <a href="https://getcomposer.org/" target="_blank" referrerpolicy="no-referrer" class="uppercase decoration-none button bg-primary py-3">Composer</a>
+                <a href="https://git-scm.com/" target="_blank" referrerpolicy="no-referrer" class="uppercase decoration-none button bg-primary py-3">git</a>
+                <a href="https://tailwindcss.com/" target="_blank" referrerpolicy="no-referrer" class="uppercase decoration-none button bg-primary py-3">npm</a>
+        </div>
+    </main>
     <footer>
         <p>Todos los derechos reservados. Dev. Fernan Pérez</p>
     </footer>
 </body>
+
 </html>
