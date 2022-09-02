@@ -59,7 +59,7 @@ nav.principal_navigation {
 }
 
 nav.principal_navigation a {
-    display: block;
+    display: none;
     text-align: center;
     color: var(--white);
     text-decoration: none;
@@ -172,6 +172,14 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 2rem
+    }
+
+    nav.principal_navigation a{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
     }
 
     #hero {
@@ -423,6 +431,18 @@ footer {
     text-decoration: none;
 }
 
+.text-white{
+    color: var(--white);
+}
+
+.text-primary{
+    color: var(--primary)
+}
+
+.bold{
+    font-weight: 700;
+}
+
 .container {
     max-width: 120rem;
     margin: 0 auto
@@ -430,6 +450,10 @@ footer {
 
 .nav_bg {
     background-color: var(--primary)
+}
+
+.block{
+    display: block;
 }
 
 p.regular_weight{

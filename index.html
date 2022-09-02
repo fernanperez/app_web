@@ -12,10 +12,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
     <title>Laravel</title>
 </head>
 
 <body>
+    <div x-data="{ open: false}" class="mobile">
+        <button @click="open = !open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+        </button>
+
+        <nav x-show="open" x-on:click.away="open = false" class="nav__mobile">
+            <ul>
+                <li class="block"><a href="index.html"class="decoration-none text-primary bold">Inicio</a></li>
+                <li class="block"><a href="instalacion.html"class="decoration-none text-primary bold">Instalación</a></li>
+                <li class="block"><a href="#"class="decoration-none text-primary bold">wewew</a></li>
+                <li class="block"><a href="#"class="decoration-none text-primary bold">ewew</a></li>
+            </ul>
+        </nav>
+    </div>
     <header>
         <h1>Dev. Fernan Pérez <span class="dev">Desarrollador backend <span class="lang_php">php</span></span></h1>
     </header>
@@ -34,8 +54,8 @@
                 <img src="img/logomark.min.svg" alt="logomark.svg">
             </div>
             <div class="hero__text">
-                <p>Laravel es un framework de aplicaciones web con sintaxis expresiva y elegante. Ya hemos sentado las
-                    bases, liberándote para crear sin sudar las pequeñas cosas.</p>
+                <q class="text-white">Laravel es un framework de aplicaciones web con sintaxis expresiva y elegante. Ya hemos sentado las
+                    bases, liberándote para crear sin sudar las pequeñas cosas.</q>
             </div>
         </div>
     </section>
