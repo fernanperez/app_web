@@ -153,6 +153,7 @@ a.button{
 
 a.sm.button{
     display: block;
+    width: 25%;
 }
 
 footer {
