@@ -1,0 +1,197 @@
+:root {
+    --white: #ffffff;
+    --primary: #ff2d20;
+    --darkred: #aa2d20;
+    --gray: #efefef;
+    --darkgray: #cdcdcd;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+::before ::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: krub, sans-serif;
+    background-image: linear-gradient(to top, var(--darkgray) 0%, var(--white) 100%);
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header h1 span.dev {
+    font-size: 2rem;
+}
+
+header h1 span.lang_php {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+nav.principal_navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav_bg {
+    background-color: var(--primary);
+}
+
+nav.principal_navigation a {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+nav.principal_navigation a:hover {
+    background-color: var(--gray);
+    color: var(--primary);
+}
+
+#hero {
+    background-image: url(../img/laravel_banner_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#hero .hero__container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    background-color: rgb(0 0 0 /70%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .hero__container h2,
+#hero .hero__container p {
+    color: var(--white);
+}
+
+#hero .hero__container .hero__image img{
+    width: 15rem;
+}
+
+#hero .hero__container .hero__text{
+    width: 25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: justify;
+}
+
+main.container{
+    text-align: center;
+}
+
+main.container.shadow{
+    -webkit-box-shadow: 0px 5px 15px 0 rgba(112, 112, 112, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0 rgba(112, 112, 112, 0.54);
+    box-shadow: 0px 5px 15px 0 rgba(112, 112, 112, 0.54);
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+main.container .description__framework{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.container .description__framework p{
+    line-height: 2;
+}
+
+main.container .description__framework .icons{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--darkred);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (min-width:768px) {
+    body{
+    font-size: 1.6rem;
+    }
+
+    nav.principal_navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    #hero .hero__container .hero__text{
+        width: 50rem;
+        font-size: 2rem;
+    }
+
+    main.container .descriptions{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    body{
+    font-size: 2rem;
+    }
+
+    nav.principal_navigation {
+        padding: 0;
+    }
+
+    main.container.shadow{
+        max-width: 100rem;
+    }
+
+    main.container .description__framework p{
+        text-align: justify;
+    }
+}
