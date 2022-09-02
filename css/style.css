@@ -82,9 +82,9 @@ nav.principal_navigation a:hover {
 
 #hero {
     background-image: url(../img/laravel_banner_4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45rem;
+    background-repeat: round;
+    background-size: auto;
+    height: 30rem;
     position: relative;
     margin-bottom: 2rem;
 }
@@ -101,18 +101,22 @@ nav.principal_navigation a:hover {
     justify-content: center;
 }
 
+#hero .hero__container h2{
+    font-size: 2.4rem;
+}
+
 #hero .hero__container h2,
 #hero .hero__container p {
     color: var(--white);
 }
 
 #hero .hero__container .hero__image img{
-    width: 15rem;
+    width: 9rem;
 }
 
 #hero .hero__container .hero__text{
     width: 25rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-align: justify;
 }
@@ -141,8 +145,8 @@ main.container .description__framework p{
 }
 
 main.container .description__framework .icons{
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
     background-color: var(--darkred);
     display: flex;
     justify-content: space-evenly;
@@ -166,15 +170,36 @@ footer{
         padding: 0 2rem;
     }
 
+    #hero{
+        height: 50rem;
+    }
+
+    #hero .hero__container .hero__image img{
+        width: 10rem;
+    }
+
     #hero .hero__container .hero__text{
         width: 50rem;
         font-size: 2rem;
+    }
+
+    main.container .descriptions .description__framework h3{
+        font-size: 2rem;
+    }
+
+    main.container .description__framework p{
+        text-align: justify;
     }
 
     main.container .descriptions{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;
+    }
+
+    main.container .description__framework .icons{
+        height: 15rem;
+        width: 15rem;
     }
 }
 
@@ -187,8 +212,24 @@ footer{
         padding: 0;
     }
 
+    #hero{
+        height: 60rem;
+    }
+
+    #hero .hero__container h2{
+        font-size: 3.8rem;
+    }
+
+    #hero .hero__container .hero__text{
+        font-size: 2.8rem;
+    }
+
     main.container.shadow{
         max-width: 100rem;
+    }
+
+    main.container .descriptions .description__framework h3{
+        font-size: 2.2rem;
     }
 
     main.container .description__framework p{
